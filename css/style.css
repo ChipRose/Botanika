@@ -1,24 +1,54 @@
-/*Null style*/
-* {
+/* ------- fonts ------- */
+@font-face {
+  font-weight: 400;
+  font-family: "Helvetica";
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2");
+  src: url("../fonts/GraphikLCG-Regular.woff") format("woff");
+}
+/* ------- clear style ------- */
+.link-clear {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+	padding: 0;
+	margin: 0;
+}
+.list-clear {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.button-clear {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+}
+.button-clear::-moz-focus-inner {
   padding: 0;
-  margin: 0;
   border: 0;
 }
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.text-clear {
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
 }
-input::placeholder {
+.fieldset-clear {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.input-clear::placeholder {
   opacity: 1;
 }
-nav,
-footer,
-header,
-aside {
-  display: block;
+.input-clear::-ms-clear {
+  display: none;
+}
+.input-clear{
+	font-family: inherit;
 }
 .page,
 .page-index {
@@ -30,56 +60,7 @@ aside {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-a,
-a:visited {
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover {
-  text-decoration: none;
-}
-s {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-/*--------------------*/
-/* fonts */
-@font-face {
-  font-weight: 400;
-  font-family: "Helvetica";
-  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2");
-  src: url("../fonts/GraphikLCG-Regular.woff") format("woff");
-}
-/* colors constant */
+/* ------- colors constant -------- */
 :root {
   --cl-black: rgb(0, 0, 0);
   --cl-white: rgb(255, 255, 255);
@@ -105,13 +86,7 @@ h6 {
 .main {
   flex: 1 1 auto;
 }
-/* adaptive styles */
-@media (max-width: 320px) {
-  :root {
-    --fz-cover-title: 30px;
-    --lh-cover-title: 1.3;
-  }
-}
+
 /* helpful style */
 .visually-hidden {
   position: absolute;
