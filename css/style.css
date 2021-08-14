@@ -7,39 +7,39 @@
 }
 /* ------- clear style ------- */
 .link-clear {
-	text-decoration: none;
-	cursor: pointer;
-	color: inherit;
-	padding: 0;
-	margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+  margin: 0;
 }
 .list-clear {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .button-clear {
-	border: none;
-	background: none;
-	cursor: pointer;
-	padding: 0;
-	margin: 0;
-	font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
 }
 .button-clear::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 .text-clear {
-	font-size: inherit;
-	font-weight: inherit;
-	margin: 0;
-	padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
 }
 .fieldset-clear {
-	margin: 0;
-	padding: 0;
-	border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .input-clear::placeholder {
   opacity: 1;
@@ -47,8 +47,8 @@
 .input-clear::-ms-clear {
   display: none;
 }
-.input-clear{
-	font-family: inherit;
+.input-clear {
+  font-family: inherit;
 }
 .page,
 .page-index {
