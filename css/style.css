@@ -1,10 +1,3 @@
-/* ------- fonts ------- */
-@font-face {
-  font-weight: 400;
-  font-family: "Helvetica";
-  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2");
-  src: url("../fonts/GraphikLCG-Regular.woff") format("woff");
-}
 /* ------- clear style ------- */
 .link-clear {
   text-decoration: none;
@@ -72,7 +65,7 @@
 }
 /* common styles */
 .page-index {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: var(--x-black);
 }
 .container {
