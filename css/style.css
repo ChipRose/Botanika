@@ -76,12 +76,7 @@
   color: var(--x-black);
 }
 .container {
-  max-width: 580px;
   margin: 0 auto;
-}
-.content {
-  display: flex;
-  flex-direction: column;
 }
 .main {
   flex: 1 1 auto;
