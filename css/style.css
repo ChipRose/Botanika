@@ -50,6 +50,10 @@
 	--cl-brd-main:rgb(174, 124, 120);
 	--cl-bg-main-button: rgb(216, 153, 153);
 	--cl-shd-main-button-hover:rgb(193, 135, 135);
+	--cl-fill-main-icon: rgb(174, 124, 120);
+	--cl-fill-popular-icon-hover: rgb(216, 153, 153);
+	--cl-bg-catalog-cover: rgba(174, 124, 120, 0.6);
+
 
 }
 /* ------- font constant ------- */
@@ -58,8 +62,14 @@
   --lh-main: 1.25;
 	--fz-main-title: 44px;
 	--lh-main-title:1.34;
+	--fz-section-title:36px;
+	--lh-section-title:1.33;
+	--fz-subsection-title:24px;
+	--lh-subsection-title:1.2;
 	--fz-section-text:24px;
 	--lh-section-text:1.2;
+	--fz-popular-price:24px;
+	--lh-popular-price:1.2;
 }
 /* ------- common styles ------- */
 .body {
@@ -81,6 +91,39 @@
 .italic{
 	font-style: italic;
 }
+/* text */
+.main-title{
+	font-family: "Playfair Display", serif;
+	font-size: var(--fz-main-title);
+	line-height: var(--lh-main-title);
+}
+.section-title{
+	font-family: "Playfair Display", serif;
+	font-size: var(--fz-section-title);
+	line-height: var(--lh-section-title);
+	font-weight: 700;
+}
+.section-text{
+	font-size: var(--fz-section-text);
+	line-height: var(--lh-section-text);
+}
+.subsection-title{
+	font-size: var(--fz-subsection-title);
+	line-height: var(--lh-subsection-title);
+	font-weight: 500;
+}
+/* buttons */
+.main-button{
+	text-align: center;
+	padding: 30px;
+	border-radius: 40px;
+	background: var(--cl-bg-main-button);
+	color: var(--cl-white);
+	transition: box-shadow 0.3s;
+}
+.main-button:hover{
+	box-shadow: 0 0 0 3px var(--cl-shd-main-button-hover);
+}
 /* ------- navigation ------- */
 .navigation{
 	border: 1px solid var(--cl-brd-main);
@@ -90,6 +133,7 @@
 }
 .navigation-list{
 	display: flex;
+	flex-wrap: wrap;
 	padding: 22px 0;
 }
 .navigation-link{
@@ -143,30 +187,12 @@
 	max-width: 384px;
 	min-height: 100%;
 }
-.cover .main-title{
-	font-family: "Playfair Display", serif;
-	font-size: var(--fz-main-title);
-	line-height: var(--lh-main-title);
-}
-.section-text{
-	font-size: var(--fz-section-text);
-	line-height: var(--lh-section-text);
-}
-.main-button{
-	text-align: center;
+.cover .main-button{
 	width: 285px;
-	padding: 30px;
-	border-radius: 40px;
-	background: var(--cl-bg-main-button);
-	color: var(--cl-white);
-	transition: box-shadow 0.3s;
-}
-.main-button:hover{
-	box-shadow: 0 0 0 3px var(--cl-shd-main-button-hover);
 }
 .cover-img{
-	display: block;
 	max-width: 100%;
+	object-fit: contain;
 	border-radius: 10px;
 }
 .cover-img-block{
@@ -182,6 +208,7 @@
 .cover-img{
 	margin-top: auto;
 	margin-right: 20px;
+	object-fit: contain;
 }
 .cover-img:last-child{
 	margin-right: 0;
@@ -192,6 +219,144 @@
 }
 .cover .section-text{
 	margin-bottom: 64px;
+}
+/* ------- advantages ------- */
+.advantages-icon{
+	fill:var(--cl-fill-main-icon);
+} 
+.advantages-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.advantages-item{
+	display: flex;
+}
+.advantages-item{
+	flex: 0 1 33%;
+}
+.advantages-text-block{
+	order: 1;
+	padding: 0 20px;
+}
+/* advantages margin */
+.advantages{
+	margin-bottom: 80px;
+}
+.subsection-title{
+	margin-bottom: 8px;
+}
+/* ------- popular ------- */
+.popular .section-title{
+	text-align: center;
+}
+.popular-price{
+	font-size: var(--fz-popular-price);
+	line-height: var(--lh-popular-price);
+	font-weight: 500;
+}
+.popular .main-button{
+	width: 285px;
+}
+.popular-list{
+	display: flex;
+	justify-content: center;
+}
+.popular-item{
+	display: flex;
+	justify-content: center;
+}
+.popular-text-block{
+	flex:0 1 387px;
+}
+.popular-img-block{
+	flex:0 0 387px;
+}
+.popular-img{
+	max-width: 100%;
+	object-fit: contain;
+}
+.popular-icon{
+	fill: var(--cl-fill-main-icon);
+	transition: fill 0.3s;
+}
+.popular-slider-control{
+	display: flex;
+	justify-content: center;
+}
+.slider-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider-button:hover .popular-icon{
+	fill:var(--cl-fill-popular-icon-hover);
+}
+/* popular margin */
+.popular{
+	margin-bottom: 71px;
+}
+.popular .section-title{
+	margin-bottom: 36px;
+}
+.popular .subsection-title{
+	margin-top: 27px;
+	margin-bottom: 20px;
+}
+.popular .subsection-text{
+	margin-bottom: 24px;
+}
+.popular-price{
+	margin-bottom: 64px;
+}
+.popular-list{
+	margin-bottom: 19px;
+}
+.popular .slider-button{
+	margin-right: 20px;
+}
+.popular .slider-button:last-child{
+	margin-right: 0;
+}
+/* ------- catalog ------- */
+.catalog-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.catalog-item{
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	width: 387px ;
+}
+.catalog-img{
+	display: block;
+	object-fit: contain;
+}
+.catalog-item:hover .catalog-link{
+	display: flex;
+}
+.catalog-link{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	z-index: 2;
+	color: var(--cl-white);
+	background: var(--cl-bg-catalog-cover);
+}
+/* catalog margin */
+.catalog .section-title{
+	margin-bottom: 8px;
+}
+.catalog-item{
+	margin-right: 19px;
+}
+.catalog-item:last-child{
+	margin-right: 0;
 }
 /* ------- helpful style ------- */
 .visually-hidden {
