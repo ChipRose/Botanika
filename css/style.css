@@ -248,7 +248,7 @@
 .advantages{
 	margin-bottom: 80px;
 }
-.subsection-title{
+.advantages .subsection-title{
 	margin-bottom: 8px;
 }
 /* ------- popular ------- */
@@ -402,6 +402,46 @@
 }
 .promo .section-title{
 	margin-bottom: 24px;
+}
+/* ------- steps ------- */
+.steps .section-title{
+	text-align: center;
+}
+.steps-icon{
+	fill:var(--cl-fill-main-icon);
+}
+.steps-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.steps-item{
+	flex: 0 0 285px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.steps .subsection-text{
+	text-align: center;
+	padding: 8px 0;
+}
+.steps-img-block{
+	order: -2;
+}
+/* steps margin */
+.steps{
+	margin-bottom: 72px;
+}
+.steps .section-title{
+	margin-bottom: 36px;
+}
+.steps-img-block{
+	margin-bottom: 8px;
+}
+.steps-item{
+	margin-right:20px;
+}
+.steps-item:last-child{
+	margin-right:0;
 }
 
 /* ------- helpful style ------- */
