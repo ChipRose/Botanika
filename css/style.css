@@ -53,6 +53,7 @@
 	--cl-fill-main-icon: rgb(174, 124, 120);
 	--cl-fill-popular-icon-hover: rgb(216, 153, 153);
 	--cl-bg-catalog-cover: rgba(174, 124, 120, 0.6);
+	--cl-bg-promo: rgb(174, 124, 120);
 
 
 }
@@ -64,12 +65,16 @@
 	--lh-main-title:1.34;
 	--fz-section-title:36px;
 	--lh-section-title:1.33;
+	--fz-main-subsection-title:16px;
+	--lh-main-subsection-title:1.25;
 	--fz-subsection-title:24px;
 	--lh-subsection-title:1.2;
 	--fz-section-text:24px;
 	--lh-section-text:1.2;
 	--fz-popular-price:24px;
 	--lh-popular-price:1.2;
+	--fz-promo-title:44px;
+	--lh-popular-price:1.34;
 }
 /* ------- common styles ------- */
 .body {
@@ -108,8 +113,8 @@
 	line-height: var(--lh-section-text);
 }
 .subsection-title{
-	font-size: var(--fz-subsection-title);
-	line-height: var(--lh-subsection-title);
+	font-size: var(--fz-main-subsection-title);
+	line-height: var(--lh-main-subsection-title);
 	font-weight: 500;
 }
 /* buttons */
@@ -238,6 +243,7 @@
 	order: 1;
 	padding: 0 20px;
 }
+
 /* advantages margin */
 .advantages{
 	margin-bottom: 80px;
@@ -248,6 +254,10 @@
 /* ------- popular ------- */
 .popular .section-title{
 	text-align: center;
+}
+.popular .subsection-title{
+	font-size: var(--fz-subsection-title);
+	line-height: var(--lh-subsection-title);
 }
 .popular-price{
 	font-size: var(--fz-popular-price);
@@ -326,29 +336,33 @@
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
-	width: 387px ;
 }
 .catalog-img{
 	display: block;
 	object-fit: contain;
 }
 .catalog-item:hover .catalog-link{
-	display: flex;
+	opacity: 1;
 }
 .catalog-link{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	display: none;
+	display: flex;
+	opacity: 0;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	top: 0;
 	z-index: 2;
 	color: var(--cl-white);
-	background: var(--cl-bg-catalog-cover);
+	background: var(--cl-bg-catalog-cover);	
+	transition: opacity 0.3s;
 }
 /* catalog margin */
+.catalog{
+	margin-bottom: 80px;
+}
 .catalog .section-title{
 	margin-bottom: 8px;
 }
@@ -358,6 +372,38 @@
 .catalog-item:last-child{
 	margin-right: 0;
 }
+/* ------- promo ------ */
+.promo{
+	color: var(--cl-white);
+}
+.promo-list{
+	background: var(--cl-bg-promo);
+}
+.promo-item{
+	display: flex;
+}
+.promo-text-block{
+	padding: 40px 20px 20px 102px;
+}
+.promo .section-title{
+	font-size: var(--fz-promo-title);
+	line-height: var(--lh-promo-title);
+	font-weight: 400;
+}
+.promo .section-text{
+	padding: 0 81px 0 0;
+}
+.promo-img{
+	display: block;
+}
+/* promo margin */
+.promo{
+	margin-bottom: 80px;
+}
+.promo .section-title{
+	margin-bottom: 24px;
+}
+
 /* ------- helpful style ------- */
 .visually-hidden {
   position: absolute;
