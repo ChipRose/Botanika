@@ -27,7 +27,7 @@
   --lh-main-subsection-title: 1.25;
   --fz-popular-subsection-title: 24px;
   --lh-popular-subsection-title: 1.2;
-	--fz-promo-subsection-text: 24px;
+  --fz-promo-subsection-text: 24px;
   --lh-promo-subsection-text: 1.2;
   --fz-section-text: 24px;
   --lh-section-text: 1.2;
@@ -215,7 +215,7 @@
 .cover .section-text {
   margin-bottom: 64px;
 }
-.cover-img { 
+.cover-img {
   margin-top: auto;
   margin-right: 20px;
 }
@@ -228,7 +228,6 @@
   fill: var(--cl-fill-main-icon);
 }
 .advantages-text-block {
-
   padding: 0 20px;
 }
 /* advantages margin */
@@ -243,7 +242,7 @@
 }
 /* ------- popular ------- */
 .popular-text-block {
-	padding: 27px 0 20px 0;
+  padding: 27px 0 20px 0;
 }
 .popular .section-title {
   text-align: center;
@@ -302,7 +301,7 @@
 }
 /* ------- catalog ------- */
 .catalog-item {
-	max-width: 387px;
+  max-width: 387px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -317,18 +316,18 @@
   color: var(--cl-white);
   background: var(--cl-bg-catalog-cover);
   transition: opacity 0.3s;
-	text-align: center;
-	padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-.catalog .subsection-title{
-	font-family: "Playfair Display", "Times New Roman", serif;
+.catalog .subsection-title {
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: var(--fz-section-title);
   line-height: var(--lh-section-title);
   font-weight: 700;
 }
 .catalog-img {
   display: block;
-	max-width: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
 .catalog-item:hover .catalog-link {
@@ -343,7 +342,7 @@
 }
 .catalog-item {
   margin-right: 19px;
-	margin-bottom: 19px;
+  margin-bottom: 19px;
 }
 .catalog-item:nth-child(3n) {
   margin-right: 0;
@@ -362,19 +361,19 @@
   padding: 40px 20px 20px 102px;
 }
 .promo .subsection-title {
-	font-family: "Playfair Display", "Times New Roman", serif;
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: var(--fz-promo-title);
   line-height: var(--lh-promo-title);
   font-weight: 400;
 }
 .promo .subsection-text {
-	font-size: var(--fz-promo-subsection-text);
-	line-height: var(--lh-promo-subsection-text);
+  font-size: var(--fz-promo-subsection-text);
+  line-height: var(--lh-promo-subsection-text);
   padding: 0 81px 0 0;
 }
 .promo-img {
   display: block;
-	max-width: 100%;
+  max-width: 100%;
 }
 /* promo margin */
 .promo {
@@ -412,7 +411,7 @@
 }
 .steps-item {
   margin-right: 20px;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .steps-item:nth-child(4n) {
   margin-right: 0;
@@ -487,7 +486,7 @@
 }
 .feed-back-item {
   margin-right: 66px;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .feed-back-item:nth-child(3n) {
   margin-right: 0;
