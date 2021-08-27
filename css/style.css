@@ -103,12 +103,12 @@
 }
 /* text */
 .main-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: var(--fz-main-title);
   line-height: var(--lh-main-title);
 }
 .section-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: var(--fz-section-title);
   line-height: var(--lh-section-title);
   font-weight: 700;
@@ -321,7 +321,7 @@
 	padding: 20px;
 }
 .catalog .subsection-title{
-	font-family: "Playfair Display", serif;
+	font-family: "Playfair Display", "Times New Roman", serif;
   font-size: var(--fz-section-title);
   line-height: var(--lh-section-title);
   font-weight: 700;
@@ -362,7 +362,7 @@
   padding: 40px 20px 20px 102px;
 }
 .promo .subsection-title {
-	font-family: "Playfair Display", serif;
+	font-family: "Playfair Display", "Times New Roman", serif;
   font-size: var(--fz-promo-title);
   line-height: var(--lh-promo-title);
   font-weight: 400;
