@@ -114,6 +114,7 @@
   font-size: var(--fz-section-title);
   line-height: var(--lh-section-title);
   font-weight: 700;
+	letter-spacing: 0.02em;
 }
 .section-text {
   font-size: var(--fz-section-text);
@@ -255,12 +256,12 @@
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+	justify-content: center;
 }
 .advantages-item {
   padding: 10px;
   display: flex;
   flex: 0 1 386px;
-  outline: 1px solid green;
 }
 .advantages-text-block {
   padding: 0 0 0 20px;
@@ -273,7 +274,7 @@
 }
 /* advantages margin */
 .advantages {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .advantages-list {
   margin-left: -10px;
@@ -290,11 +291,21 @@
   margin-bottom: 8px;
 }
 /* ------- popular ------- */
-.popular-text-block {
-  padding: 27px 0 20px 0;
-}
 .popular .section-title {
   text-align: center;
+}
+.popular-list{
+	display: flex;
+	justify-content: center;
+}
+.popular-item{
+	padding: 0 10px;
+	display: flex;
+	flex:0 1 805px;
+}
+.popular-text-block {
+  padding: 27px 0 20px 0;
+	flex: 0 0 387px;
 }
 .popular .subsection-title {
   font-size: var(--fz-popular-subsection-title);
@@ -308,8 +319,12 @@
   line-height: var(--lh-popular-price);
   font-weight: 500;
 }
+.popular-img-block{
+	flex: 0 0 387px;
+}
 .popular-img {
   max-width: 100%;
+	height: auto;
   object-fit: contain;
 }
 .popular-icon {
@@ -319,6 +334,11 @@
 .slider-button:hover .popular-icon {
   fill: var(--cl-fill-popular-icon-hover);
 }
+.popular-slider-control{
+	display: flex;
+	justify-content: center;
+	outline: 1px solid red;
+}
 /* popular margin */
 .popular {
   margin-bottom: 71px;
@@ -327,27 +347,34 @@
   margin-bottom: 36px;
 }
 .popular .subsection-title {
-  margin-top: 27px;
   margin-bottom: 20px;
 }
 .popular .subsection-text {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
-.popular .slider-button {
-  margin-right: 20px;
+.popular-size{
+	margin-top: 24px;
+	margin-bottom: 24px;
 }
 .popular-text-block {
+  margin-right: 20px;
+}
+.popular-price {
+  margin-bottom: 10px;
+}
+.popular .main-button{
+	margin-top: 52px;
+}
+.popular-list {
+  margin-bottom: 10px;
+}
+.popular .slider-button {
   margin-right: 20px;
 }
 .popular .slider-button:last-child {
   margin-right: 0;
 }
-.popular-price {
-  margin-bottom: 64px;
-}
-.popular-list {
-  margin-bottom: 19px;
-}
+
 /* ------- catalog ------- */
 .catalog-item {
   max-width: 387px;
