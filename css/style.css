@@ -377,6 +377,7 @@
 /* ------- catalog ------- */
 .catalog-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .catalog-item {
   max-width: 387px;
@@ -405,7 +406,7 @@
   font-weight: 700;
 }
 .catalog-img {
-	display: block;
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
