@@ -541,7 +541,6 @@
   flex: 0 0 487px;
   display: flex;
   flex-direction: column;
-  outline: 1px solid red;
 }
 .news-img-block {
   display: grid;
@@ -736,6 +735,7 @@
   padding: 22px 10px 30px 10px;
   display: flex;
   flex-wrap: wrap;
+	justify-content: center;
   align-items: center;
 }
 .footer-menu-list {
@@ -800,7 +800,6 @@
   margin-right: 0;
 }
 .footer-social-list {
-  margin-left: auto;
   margin-right: -10px;
 }
 .footer-social-item {
