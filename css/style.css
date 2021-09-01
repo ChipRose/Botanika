@@ -304,8 +304,7 @@
   flex: 0 1 805px;
 }
 .popular-text-block {
-  padding: 27px 0 20px 0;
-  flex: 0 0 387px;
+  padding: 27px 10px 20px 6px;
 }
 .popular .subsection-title {
   font-size: var(--fz-popular-subsection-title);
@@ -320,9 +319,10 @@
   font-weight: 500;
 }
 .popular-img-block {
-  flex: 0 0 387px;
+  flex: 0 0 395px;
 }
 .popular-img {
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -337,36 +337,35 @@
 .popular-slider-control {
   display: flex;
   justify-content: center;
-  outline: 1px solid red;
 }
 /* popular margin */
 .popular {
   margin-bottom: 70px;
 }
 .popular .section-title {
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 }
 .popular .subsection-title {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .popular .subsection-text {
   margin-bottom: 10px;
 }
 .popular-size {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 23px;
+  margin-bottom: 25px;
 }
 .popular-text-block {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .popular-price {
   margin-bottom: 10px;
 }
 .popular .main-button {
-  margin-top: 52px;
+  margin-top: 55px;
 }
 .popular-list {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .popular .slider-button {
   margin-right: 20px;
@@ -417,7 +416,7 @@
 }
 /* catalog margin */
 .catalog {
-  margin-bottom: 61px;
+  margin-bottom: 60px;
 }
 .catalog .subsection-title {
   margin-top: 173px;
@@ -438,16 +437,16 @@
   color: var(--cl-white);
 }
 .promo-list {
-	display: flex;
+  display: flex;
   background: var(--cl-bg-promo);
 }
-.promo-item{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.promo-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .promo-text-block {
-	flex:0 0 420px; 
+  flex: 0 0 420px;
   padding: 40px 20px 20px 102px;
 }
 .promo .subsection-title {
@@ -455,7 +454,7 @@
   font-size: var(--fz-promo-title);
   line-height: var(--lh-promo-title);
   font-weight: 400;
-	letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 }
 .promo .subsection-text {
   font-size: var(--fz-promo-subsection-text);
@@ -464,7 +463,7 @@
 .promo-img {
   display: block;
   max-width: 100%;
-	height: auto;
+  height: auto;
 }
 /* promo margin */
 .promo {
@@ -480,6 +479,21 @@
   margin-bottom: 0;
 }
 /* ------- steps ------- */
+.steps-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.steps-item{
+	flex: 0 0 275px;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	padding: 0px;
+}
+.steps-img-block{
+	order:-1;
+}
 .steps .section-title {
   text-align: center;
 }
