@@ -539,37 +539,38 @@
 }
 .news-text-block {
   padding: 70px 0 20px 0;
-	flex:0 0 487px;
+  flex: 0 0 487px;
   display: flex;
   flex-direction: column;
-	outline: 1px solid red;
+  outline: 1px solid red;
 }
-.news-img-block{
-	display: grid;
-	grid-template-areas: "photo-small-1 photo-big"
-	"photo-small-2 photo-big";
-	gap: 20px;
+.news-img-block {
+  display: grid;
+  grid-template-areas:
+    "photo-small-1 photo-big"
+    "photo-small-2 photo-big";
+  gap: 20px;
 }
-.news-img{
-	display: block;
-	max-width: 100%;
-	height: auto;
+.news-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.news-img:first-child{
-	grid-area: photo-small-1;
+.news-img:first-child {
+  grid-area: photo-small-1;
 }
-.news-img:nth-child(2){
-	grid-area: photo-small-2;
+.news-img:nth-child(2) {
+  grid-area: photo-small-2;
 }
-.news-img:nth-child(3){
-	grid-area: photo-big;
+.news-img:nth-child(3) {
+  grid-area: photo-big;
 }
 .news .section-text {
   padding: 0 100px 0 0;
 }
-.news-footer-list{
-	display: flex;
-	flex-wrap: wrap;
+.news-footer-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .news-footer-link:hover .news-icon {
   fill: var(--cl-fill-news-icon-hover);
@@ -580,7 +581,7 @@
 }
 .news-footer-item {
   margin-right: 20px;
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .news-footer-item:last-child {
   margin-right: 0;
@@ -591,26 +592,31 @@
 .news .section-text {
   margin-bottom: 10px;
 }
-.news-text-block{
-	margin-right: 20px;
+.news-text-block {
+  margin-right: 20px;
 }
 .news .section-text:last-child {
   margin-bottom: 0;
 }
-.news-footer{
-	margin-top: 30px;
+.news-footer {
+  margin-top: 30px;
 }
 /* ------- feed back ------- */
-.feed-back .container {
-  box-sizing: border-box;
-  border: 1px solid var(--cl-brd-main);
-  padding: 20px;
+.feed-back-container {
+	padding: 10px 0 10px 0;
+  outline: 1px solid var(--cl-brd-main);
+}
+.feed-back-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .feed-back .section-title {
   text-align: center;
 }
 .feed-back-item {
-  padding: 20px;
+	flex: 0 0 300px;
+	padding: 10px;
 }
 .feed-back .subsection-text {
   text-align: center;
@@ -623,27 +629,26 @@
 }
 /* feed back margin */
 .feed-back {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .feed-back .section-title {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 33px;
 }
 .feed-back .subsection-text {
-  margin-bottom: 16px;
-}
-.feed-back-list {
-  margin-bottom: 44px;
+  margin-bottom: 10px;
 }
 .feed-back-item {
-  margin-right: 66px;
-  margin-bottom: 20px;
+  margin-right: 85px;
+  margin-bottom: 30px;
 }
-.feed-back-item:nth-child(3n) {
-  margin-right: 0;
-}
+.feed-back-item:nth-child(3n),
 .feed-back-item:last-child {
   margin-right: 0;
+}
+.feed-back-signature{
+	margin-top: 6px;
+	margin-bottom: 10px;
 }
 /* ------- address ------- */
 .address {
@@ -651,28 +656,29 @@
   height: 644px;
 }
 .address .container {
+	padding: 52px 20px 50px 100px;
+	height: 100%;
+	box-sizing: border-box;
   position: absolute;
-  box-sizing: border-box;
-  height: 100%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 52px 105px 72px 105px;
 }
 .address-text-block {
+	padding: 42px 20px 32px 35px;
+	box-sizing: border-box;
   max-width: 386px;
   border-radius: 12px;
   background: var(--cl-white);
-  padding: 40px 20px 55px 32px;
   box-shadow: 0px 4px 40px 0px var(--cl-shd-address);
 }
 .address-text {
   font-style: normal;
 }
 .address-link {
-  color: inherit;
   position: relative;
   display: inline-block;
+	color: inherit;
 }
 .address-link::before {
   content: "";
@@ -680,10 +686,10 @@
   width: 0;
   height: 2px;
   left: 50%;
+	bottom: -2px;
   transform: translateX(-50%);
-  bottom: -2px;
-  background: var(--cl-brd-main);
   transition: width 0.3s;
+	background: var(--cl-brd-main);
 }
 .address-link:hover.address-link::before {
   width: 100%;
@@ -696,10 +702,10 @@
 }
 /* address margin */
 .address .section-title {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 .address .subsection-text:first-of-type {
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 .address .subsection-text:nth-of-type(2) {
   margin-bottom: 14px;
@@ -708,10 +714,10 @@
   margin-bottom: 14px;
 }
 .address .subsection-text:nth-of-type(6) {
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 }
 .address-link:first-of-type {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 .address-link:nth-of-type(2) {
   margin-bottom: 10px;
