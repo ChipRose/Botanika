@@ -771,7 +771,7 @@
 	flex: 0 0 805px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 .footer-menu-link {
@@ -823,7 +823,8 @@
   margin-right: 58px;
   margin-bottom: 10px;
 }
-.footer-menu-item:last-child {
+.footer-menu-item:last-child,
+.footer-menu-item:nth-child(6n) {
   margin-right: 0;
 }
 .footer-social-list{
@@ -833,7 +834,8 @@
   margin-right: 8px;
 	margin-bottom: 8px;
 }
-.footer-social-item:last-child {
+.footer-social-item:last-child,
+.footer-social-item:nth-child(3n) {
   margin-right: 0;
 }
 /* ------- helpful style ------- */
