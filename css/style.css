@@ -85,7 +85,7 @@
   -webkit-text-size-adjust: 100%;
 }
 .body {
-  width: 100%;
+	min-width: 1220px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: var(--fz-main);
   line-height: var(--lh-main);
