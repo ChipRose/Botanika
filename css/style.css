@@ -393,19 +393,28 @@
   flex-wrap: wrap;
 }
 .catalog-item {
+	min-height: 442px;
   flex: 0 0 32.22%;
-  border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
+.catalog-img {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+  border-radius: 10px;
+}
 .catalog-link {
   padding: 10px;
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
+	min-width: 100%;
+	min-height: 100%;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -423,13 +432,7 @@
 .catalog .subsection-text {
   text-align: center;
 }
-.catalog-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-}
+
 /* catalog margin */
 .catalog {
   margin-bottom: 60px;
@@ -782,12 +785,13 @@
 }
 .footer-logo {
   padding: 13px 0 25px 0;
+	flex: 0 0 8.4%;
   display: flex;
   align-items: center;
 }
 .footer-menu-list {
   padding: 21px 0 25px 0;
-  flex: 0 0 70%;
+  flex: 0 0 67.5%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -795,7 +799,6 @@
 .footer-menu-item {
   flex: 0 1 auto;
 }
-
 .footer-menu-link {
   padding: 10px 5px 10px 5px;
   position: relative;
@@ -819,11 +822,16 @@
 }
 .footer-social-list {
   padding: 15px 0 20px 0;
-  flex: 0 0 105px;
+  flex: 0 0 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+}
+.footer-social-item{
+	flex:0 0 26px;
+	display: flex;
+	justify-content: center;
 }
 .footer-social-link {
   padding: 5px;
@@ -835,14 +843,16 @@
 }
 /* footer margin */
 .footer-menu-logo {
-  margin-left: 1px;
-  margin-right: 94px;
+	margin-top: 3px;
+	margin-left:1px;
+	margin-right: 93px;
 }
-.footer-menu-list {
-  margin-right: 95px;
+.footer-menu-list{
+	margin-top: 1px;
+	margin-right: 87px;
 }
 .footer-menu-item {
-  margin-right: 67px;
+  margin-right: 59px;
   margin-bottom: 10px;
 }
 .footer-menu-item:last-child,
@@ -850,10 +860,10 @@
   margin-right: 0;
 }
 .footer-social-list {
-  margin-right: 0px;
+  margin-right: -10px;
 }
 .footer-social-item {
-  margin-right: 8px;
+  margin-right: 6px;
   margin-bottom: 8px;
 }
 .footer-social-item:last-child,
