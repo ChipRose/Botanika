@@ -319,7 +319,7 @@
 .popular-item {
   padding: 0 10px;
   flex: 0 1 805px;
-  display: flex;
+  display: none;
 }
 .popular-text-block {
   padding: 27px 6px 20px 6px;
@@ -882,4 +882,7 @@
   white-space: nowrap;
   clip-path: inset(100%);
   overflow: hidden;
+}
+.active{
+	display: flex;
 }
