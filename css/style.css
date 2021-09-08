@@ -12,8 +12,10 @@
   --cl-bg-promo: rgb(174, 124, 120);
   --cl-fill-news-icon: rgb(216, 153, 153);
   --cl-fill-news-icon-hover: rgb(193, 135, 135);
-  --cl-shd-address: rgba(217, 217, 217, 0.3);
+  --cl-shd-main: rgba(217, 217, 217, 0.3);
   --cl-bg-footer: rgb(174, 124, 120);
+	--cl-fill-cart-close: rgb(255, 124, 120);
+	--cl-fill-cart-icon: rgb(88, 124, 1);
 }
 /* ------- font constant ------- */
 :root {
@@ -78,6 +80,7 @@
 }
 /* ------- common styles ------- */
 .page {
+	position: relative;
   min-height: 100%;
   min-width: 1220px;
   -ms-text-size-adjust: 100%;
@@ -868,6 +871,75 @@
 .footer-social-item:last-child,
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
+}
+/* ------- modal window cart------- */
+.cart-close-icon{
+	fill:var(--cl-fill-cart-close);
+}
+.cart-message-icon-circle{
+	fill:var(--cl-fill-cart-icon);
+}
+.cart-message-icon-agree{
+	fill:var(--cl-white);
+}
+.modal-window{
+	padding: 15px;
+	width: 500px;
+	min-height: 300px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	color: var(--cl-txt-main);
+	background: var(--cl-white);
+	box-shadow: 0 0 20px 5px var(--cl-shd-main),
+							0 -5px 0 0 var(--cl-bg-main-button);
+}
+.close-cart{
+	position: absolute;
+	top: 0;
+	right: -30px;
+}
+.cart-text-block{
+	flex: 1 1 auto;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cart-footer{
+	align-self: center;
+}
+.cart-window .main-button{
+	padding: 15px;
+	width: 200px;
+}
+.cart-button{
+	padding: 15px;
+	color: inherit;
+	background: var(--cl-white);
+	text-align: center;
+  border-radius: 40px;
+	box-shadow: 0 0 0 1px var(--cl-shd-main);
+  transition: box-shadow 0.3s;
+}
+.cart-button:hover {
+  box-shadow: 0 0 0 4px var(--cl-shd-main);
+}
+.cart-window{
+	position: fixed;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+}
+/* modal window cart margin */
+.cart-window .subsection-text{
+	margin-right: 20px;
+}
+.cart-window .main-button{
+margin-right: 20px;
 }
 /* ------- helpful style ------- */
 .visually-hidden {
