@@ -125,19 +125,19 @@
                 <p class="text-clear subsection-text">Элегантный букет, который станет отличным подарком на&nbsp;день рождения или юбилей.</p>
                 <p class="text-clear popular-size">30 × 40 см</p>
                 <p class="text-clear popular-price">3600 руб.</p>
-                <a href="#" class="link-clear main-button">Заказать</a>
+                <a href="#" class="link-clear main-button popular-button">Заказать</a>
               </div>
               <div class="popular-img-block">
                 <img src="img/popular/bouquet-tenderness.png" alt="Букет из белых роз" class="popular-img" width="387" height="438" />
               </div>
             </li>
-						<li class="popular-item">
+            <li class="popular-item">
               <div class="popular-text-block">
                 <h3 class="text-clear subsection-title">Букет «Очарование»</h3>
                 <p class="text-clear subsection-text">Оригинальный букет, для всех случаев жизни. Никого не оставит равнодушным.</p>
                 <p class="text-clear popular-size">40 × 40 см</p>
                 <p class="text-clear popular-price">2300 руб.</p>
-                <a href="#" class="link-clear main-button">Заказать</a>
+                <a href="#" class="link-clear main-button popular-button">Заказать</a>
               </div>
               <div class="popular-img-block">
                 <img src="img/popular/bouquet-charm.png" alt="Букет из белых, розовых, фиолетовых роз" class="popular-img" width="435" height="532" />
@@ -422,31 +422,27 @@
         </ul>
       </div>
     </footer>
-		<section class="modal-window cart-window">
-			<h2 class="visually-hidden">Корзина</h2>
-			<div class="cart-text-block">
-				<p class="text-clear subsection-text">Товар добавлен в корзину!</p>
-				<svg class="cart-message-icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path class="cart-message-icon-circle" d="M33 66a33 33 0 100-66 33 33 0 000 66z" />
-					<path
-						class="cart-message-icon-agree"
-						d="M49.64 21.07a1 1 0 00-1.41 0L29.79 39.5a1 1 0 01-1.42 0l-8.14-8.14a1 1 0 00-1.41 0l-3.54 3.54a1 1 0 000 1.41l13.1 13.1a1 1 0 001.4 0l3.54-3.54 1.42-1.42 18.44-18.43a1 1 0 000-1.42l-3.54-3.53z"
-					/>
-				</svg>
-			</div>
-			<button class="button-clear close-cart" type="button">
-				<svg  class="cart-close-icon" aria-hidden="true" focusable="false" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z"
-					/>
-				</svg>
-				<span class="visually-hidden">Закрыть</span>
-			</button>
-			<footer class="cart-footer">
-				<a class="link-clear main-button ordered-cart-button" tabindex="1" href="#">Оформить заказ</a>
-				<a class="link-clear cart-button" tabindex="2" href="index.html">Продолжить покупки</a>
-			</footer>
-		</section>
-		<script src="js/script.js"></script>
+    <!-- ==== MODAL WINDOW ==== -->
+    <section class="modal-window cart-window">
+      <h2 class="visually-hidden">Корзина</h2>
+      <div class="cart-text-block">
+        <p class="text-clear subsection-text">Товар добавлен в корзину!</p>
+        <svg class="cart-message-icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="cart-message-icon-circle" d="M33 66a33 33 0 100-66 33 33 0 000 66z" />
+          <path class="cart-message-icon-agree" d="M49.64 21.07a1 1 0 00-1.41 0L29.79 39.5a1 1 0 01-1.42 0l-8.14-8.14a1 1 0 00-1.41 0l-3.54 3.54a1 1 0 000 1.41l13.1 13.1a1 1 0 001.4 0l3.54-3.54 1.42-1.42 18.44-18.43a1 1 0 000-1.42l-3.54-3.53z" />
+        </svg>
+      </div>
+      <button class="button-clear close-cart" type="button">
+        <svg class="cart-close-icon" aria-hidden="true" focusable="false" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z" />
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <footer class="cart-footer">
+        <a class="link-clear main-button cart-button-ordered" tabindex="1" href="#">Оформить заказ</a>
+        <a class="link-clear cart-button-continue" tabindex="2" href="#">Продолжить покупки</a>
+      </footer>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
